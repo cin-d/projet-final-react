@@ -1,0 +1,27 @@
+.page-mangas {
+    
+    h1 {
+        font-family: "bungee";
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 50px;
+        color: $turquoise;
+        text-shadow: 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue;
+    }
+    
+    .articles-page-mangas {
+        display: flex;
+        justify-content: center;
+    }
+
+    .article-manga {
+        width: 50%;
+        height: 250px; 
+        border: 2px solid $orange;
+        margin-bottom: 20px;
+        background-color: #15a8b052;
+        color: $blue;
+    }
+
+}

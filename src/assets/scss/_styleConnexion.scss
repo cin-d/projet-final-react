@@ -1,0 +1,72 @@
+main {
+
+    font-family: "Monserrat";
+    font-weight: bold;
+    font-size: 17px;
+    
+    .contour-background {
+        border: 2px solid $orange;
+        width: 700px;
+        height: 450px;
+        margin: auto;
+    }
+    
+    .title-connexion {
+        margin-top: 92px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: "bungee";
+        text-align: center;
+        color: $blue;
+        text-shadow: 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange;
+        padding-bottom: 50px; 
+    }
+
+    .pseudo-form {
+        padding-bottom: 30px;
+        color: $blue;
+        font-weight: bold;
+        text-align: center;
+    }    
+    
+    .email-form {
+        padding-bottom: 30px;
+        color: $blue;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .mail-lbl {
+        padding-right: 65px;
+    }
+        
+    .password-form {
+        padding-bottom: 30px;
+        color: $blue;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .password-lbl-co {
+        padding-right: 20px;
+    }
+    
+    .submit-form {
+        text-align: center;
+    }
+    
+    .ipt-form-co {
+        padding: 7px 15px;
+        border-radius: 15px;
+        color: $blue;
+        border: 2px solid $blue;
+        background-color: $beige;
+    }
+
+    .ipt-form-co:hover {
+        color: $orange;
+        border: 2px solid $orange;
+    }
+
+}    
+

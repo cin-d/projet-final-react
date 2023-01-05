@@ -1,0 +1,86 @@
+main {
+
+    font-family: "Monserrat";
+    font-weight: bold;
+    font-size: 17px;
+    
+    .contour-background {
+        border: 2px solid $orange;
+        width: 700px;
+        height: 450px;
+        margin: auto;
+    }
+    
+    .title-inscription {
+        margin-top: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: "bungee";
+        text-align: center;
+        color: $blue;
+        text-shadow: 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange, 0 0 1px $orange;
+        padding-bottom: 50px; 
+    }
+
+    .pseudo-form {
+        padding-bottom: 25px;
+        color: $blue;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .pseudo-lbl {
+        padding-right: 145px;
+    }
+    
+    .email-form {
+        padding-bottom: 30px;
+        color: $blue;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .email-lbl {
+        padding-right: 147px;
+    }
+    
+    .password-form {
+        padding-bottom: 30px;
+        color: $blue;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .password-lbl {
+        padding-right: 102px;
+    }
+
+    .repassword-form {
+        padding-bottom: 30px;
+        color: $blue;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .repassword-lbl {
+        padding-right: 10px;
+    }
+    
+    .submit-form {
+        text-align: center;
+    }
+
+    .ipt-form-ins {
+        padding: 7px 15px;
+        border-radius: 15px;
+        color: $blue;
+        border: 2px solid $blue;
+        background-color: $beige;
+    }
+    
+    .ipt-form-ins:hover {
+        color: $orange;
+        border: 2px solid $orange;
+    }
+
+}    

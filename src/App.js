@@ -1,24 +1,60 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './assets/scss/style.scss';
+
+import Home from './pages/Home';
+
+import Mangas from './pages/Mangas';
+import Animes from './pages/Animes';
+
+import ArticleManga from './pages/ArticleManga';
+import ArticleAnime from './pages/ArticleAnime';
+
+import Inscription from './pages/Inscription';
+import Connexion from './pages/Connexion';
+
+import ActuMangas from './pages/ActuMangas';
+import ActuAnimes from './pages/ActuAnimes';
+
+import PlanDuSite from './pages/PlanDuSite';
+import QuiSommesNous from './pages/QuiSommesNous';
+import NousContacter from './pages/NousContacter';
+import PolitiqueDeConfidentialite from './pages/PolitiqueDeConfidentialite';
+import Cookies from './pages/Cookies';
+import MentionsLegales from './pages/MentionsLegales';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+
+          <Route path="/mangas" element={<Mangas />} />
+          <Route path="/animes" element={<Animes />} />
+
+          <Route path="/article-manga" element={<ArticleManga />} />
+          <Route path="/article-anime" element={<ArticleAnime />} />
+
+          <Route path="/inscription" element={<Inscription />} />
+          <Route path="/connexion" element={<Connexion />} />
+
+          <Route path="/actu-mangas" element={<ActuMangas />} />
+          <Route path="/actu-animes" element={<ActuAnimes />} />
+          
+          <Route path="/plan-du-site" element={<PlanDuSite />} />
+          <Route path="/qui-sommes-nous" element={<QuiSommesNous />} />
+          <Route path="/nous-contacter" element={<NousContacter />} />
+          <Route path="/politique-de-confidentialite" element={<PolitiqueDeConfidentialite />} />
+          <Route path="/cookies" element={<Cookies />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+    
   );
 }
 

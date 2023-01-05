@@ -1,0 +1,71 @@
+#footer {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: $blue;
+    text-decoration: none;
+}
+
+
+.mentions-footer {
+    list-style-type: none;
+}
+
+.style-list-footer {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: $blue;
+    padding-left: 55px;
+    text-decoration: none;
+}
+
+.style-list-footer:hover {
+    color: $orange;
+}
+
+.icon-reseaux {
+    color: $blue;
+}
+
+.icon-reseaux:hover {
+    color: $orange;
+}
+
+.logo-reseaux {
+    list-style-type: none;
+    display: flex; 
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 45px;
+    font-size: 20px;
+
+    .fa-brands {
+        padding-right: 20px;
+    }
+}
+
+.newsletter {
+    padding-left: 250px;
+    font-size: 17px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: $blue;
+}
+
+.ipt-newsletter {
+    border-radius: 15px;
+    border: 2px solid $blue;
+}
+
+.ipt-newsletter:hover {
+    border: 2px solid $orange;
+}
+
+.icon-newsletter {
+    margin-left: 20px;
+    color: $blue;
+}
+
+.icon-newsletter:hover {
+    color: $orange;
+}
+
