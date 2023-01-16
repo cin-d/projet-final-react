@@ -7,7 +7,7 @@ const Header = () => {
             <nav>
                 <ul className="liste-navbar">
                     <li>
-                        <Link to="/">
+                        <Link to="/home">
                             <img src="/img/logonav.png" alt="photo du logo" />
                         </Link>
                     </li>

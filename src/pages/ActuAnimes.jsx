@@ -9,7 +9,7 @@ const ActuAnimes = () => {
 
     useEffect(() => {
         (async () => {
-            const response = await fetch('http://localhost:80/api/articles');
+            const response = await fetch('http://localhost:80/api/actuanimes');
             const actualitesAnimes = await response.json();
             setActualitesAnimes(actualitesAnimes);
         })();

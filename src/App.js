@@ -31,20 +31,20 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
 
           <Route path="/mangas" element={<Mangas />} />
           <Route path="/animes" element={<Animes />} />
 
-          <Route path="/article-manga" element={<ArticleManga />} />
-          <Route path="/article-anime" element={<ArticleAnime />} />
+          {/* <Route path="/article-manga" element={<ArticleManga />} />
+          <Route path="/article-anime" element={<ArticleAnime />} /> */}
 
           <Route path="/inscription" element={<Inscription />} />
           <Route path="/connexion" element={<Connexion />} />
 
           <Route path="/actu-mangas" element={<ActuMangas />} />
           <Route path="/actu-animes" element={<ActuAnimes />} />
-          
+
           <Route path="/plan-du-site" element={<PlanDuSite />} />
           <Route path="/qui-sommes-nous" element={<QuiSommesNous />} />
           <Route path="/nous-contacter" element={<NousContacter />} />
