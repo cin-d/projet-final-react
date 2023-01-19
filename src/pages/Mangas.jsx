@@ -1,10 +1,10 @@
-import Header from "../Header";
-import Footer from "../Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router";
+// import { useParams } from "react-router";
 
 const Mangas = () => {
-    const { id } = useParams();
+    // const { id } = useParams();
     const [listMangas, setListMangas] = useState([]);
 
     useEffect(() => {

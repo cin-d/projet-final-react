@@ -8,11 +8,13 @@ import Home from './pages/Home';
 import Mangas from './pages/Mangas';
 import Animes from './pages/Animes';
 
-import ArticleManga from './pages/ArticleManga';
-import ArticleAnime from './pages/ArticleAnime';
+// import ArticleManga from './pages/ArticleManga';
+// import ArticleAnime from './pages/ArticleAnime';
 
 import Inscription from './pages/Inscription';
 import Connexion from './pages/Connexion';
+import EspaceAdmin from './pages/EspaceAdmin';
+import EspaceUser from './pages/EspaceUser';
 
 import ActuMangas from './pages/ActuMangas';
 import ActuAnimes from './pages/ActuAnimes';
@@ -41,6 +43,9 @@ function App() {
 
           <Route path="/inscription" element={<Inscription />} />
           <Route path="/connexion" element={<Connexion />} />
+
+          <Route path="/espace-admin" element={<EspaceAdmin />} />
+          <Route path="/espace-user" element={<EspaceUser />} />
 
           <Route path="/actu-mangas" element={<ActuMangas />} />
           <Route path="/actu-animes" element={<ActuAnimes />} />

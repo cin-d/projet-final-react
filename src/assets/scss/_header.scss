@@ -6,6 +6,9 @@
 nav {
     background-color: $beige;
     height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
  
     .liste-navbar {
         display: flex;
@@ -13,6 +16,7 @@ nav {
         align-items: center;
         justify-content: space-between;
         list-style-type: none;
+        flex: 1;
     }
 
     .search-bar {
@@ -20,24 +24,16 @@ nav {
         padding-right: 150px;
     }
 
-    .link-title {
+    .link {
+        padding-right: 20px;
+        color: $blue;
+        text-decoration: none; 
         text-transform: uppercase;
         font-size: 18px;
         font-weight: bold;
         font-family: "Montserrat";
-       
-    }
-
-    .link-manga {
-        padding-right: 20px;
-        color: $blue;
-        text-decoration: none; 
     }
     
-    .link-anime {
-        color: $blue;
-        text-decoration: none;
-    }
     
     .style-input {
         border-radius: 15px;
@@ -83,5 +79,38 @@ nav {
             transition: all  0.3s ease-in;
         }
     }
+    .burgerArea{
+        display:none;
+    }
     
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+        position: relative;
+        
+    .liste-navbar{
+        display: none!important;
+        &.display{
+            display: flex!important;
+            flex-direction: column;
+            position: absolute;
+            height:calc(100vh - 60px);
+            background-color: $beige;
+            top:60px;
+            left:0;
+            width:100%;
+        }
+    }
+
+    .burgerArea{
+        display: block;
+    }
+    .burger {
+        cursor: pointer;
+        color: $blue;
+        background-color: $beige;
+    }  
+    
+}
 }

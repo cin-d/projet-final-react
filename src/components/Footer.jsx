@@ -17,6 +17,21 @@ const Footer = () => {
                                 <li>
                                     <Link className="style-list-footer" to="/nous-contacter">Nous contacter</Link>
                                 </li>
+                                <li>
+                                    <Link className="style-list-footer" to="/politique-de-confidentialite">
+                                        Politique de confidentialité
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link className="style-list-footer" to="/cookies">
+                                        Cookies <i className="fa-solid fa-cookie"></i>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link className="style-list-footer" to="/mentions-legales">
+                                        Mentions légales
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                         <div className="col-md-6">
@@ -40,31 +55,12 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-6">
-                            <ul className="mentions-footer">
-                                <li>
-                                    <Link className="style-list-footer" to="/politique-de-confidentialite">
-                                        Politique de confidentialité
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link className="style-list-footer" to="/cookies">
-                                        Cookies <i class="fa-solid fa-cookie"></i>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link className="style-list-footer" to="/mentions-legales">
-                                        Mentions légales
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="col-md-6">
+                        <div className="col-md-12">
                             <div className="newsletter">
                                 <p>Newsletter :</p>
                                 <input className="ipt-newsletter" type="text" />
                                 <a className="icon-newsletter" href="#">
-                                    <i class="fa-solid fa-check"></i>
+                                    <i className="fa-solid fa-check"></i>
                                 </a>
                             </div>
                         </div>

@@ -1,18 +1,23 @@
-import Header from "../Header";
-import Footer from "../Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import "../assets/scss/style.scss";
 import { useNavigate } from "react-router";
 
 const Connexion = () => {
-
+// Je créé les constantes dont j'aurai besoin 
     const navigate = useNavigate();
 
     const handleSubmit = async (event) => {
+        // Je créé la constante asynchrone pour ne pas bloquer l'exécution du reste du code
+        // J'ajoute un écouteur d'événement à la soumission du formulaire de connexion
+        // qui récupèrera les valeurs suivantes
         event.preventDefault();
 
         const email = event.target.email.value;
         const password = event.target.password.value;
 
+        // Je stocke la réponse dans une constante
+        // Je fais appel à la route login de mon API avec une méthode HTTP de type 'POST'
         const response = await fetch('http://localhost:80/api/connexion', {
             method : "POST",
             headers: {
@@ -23,11 +28,15 @@ const Connexion = () => {
                 password
             }),
         });
+                // Je récupère la réponse et la convertis en format JSON
         const data = await response.json();
 
-        if(response.status === 200) {
+        if(response.status === 200 && data.role === 'user') {
             localStorage.setItem('jwt', JSON.stringify(data))
-            navigate('/home');
+            navigate('/espace-user');
+        } else if (response.status === 200 && data.role === 'admin') {
+             localStorage.setItem ('jwt', JSON.stringify(data))
+             navigate('/espace-admin');
         } else {
             alert('Combinaison email et mot de passe incorrecte')
             navigate('/connexion')

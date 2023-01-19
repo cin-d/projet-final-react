@@ -1,5 +1,5 @@
-import Header from "../Header";
-import Footer from "../Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import "../assets/scss/style.scss";
 import { useNavigate } from "react-router-dom";
 
@@ -39,7 +39,7 @@ const Inscription = () => {
                         <div className="contour-background">
                             <h1 className="title-inscription">Inscription :</h1>
                 
-                            <form onSubmit={handleSubmit} class="form-inscription">
+                            <form onSubmit={handleSubmit} className="form-inscription">
                                 <div className="email-form">
                                     <label className="email-lbl" htmlFor="email">E-mail : </label>
                                     <input type="email" name="email" id="email" required />

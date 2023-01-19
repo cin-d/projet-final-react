@@ -8,27 +8,26 @@ const Main = () => {
             <section id="coup-de-coeur">
                 <div className="container">
 
-                    <div className="row">
-                        <div className="col-md-12 text-center">                        
+                    {/* <div className="row"> */}
+                        <div className="col-12 text-center">                        
                             <h2>Les coups de <span><i className="fa-solid fa-heart"></i></span> Mangaddict</h2>
                         </div>
-                    </div>
+                    {/* </div> */}
 
                     <div className="row">
-
-                        <div className="col-md-4">
+                        <div className="col-xxl-4">
                             <div className="img-cdc">
                                     <img className="img-cdc" src="/img/Bleach-Thousand-Year-Blood-War-Arc-930x620.webp" alt="" />
                             </div>
                         </div>
 
-                        <div className="col-md-4">   
+                        <div className="col-xxl-4">   
                             <div className="img-cdc">
                                 <img src="/img/demon-slayer-anime.jpg" alt="" />
                             </div>
                         </div>
 
-                        <div className="col-md-4"> 
+                        <div className="col-xxl-4 "> 
                             <div className="img-cdc">
                                 <img className="img-cdc" src="/img/téléchargement.jpg" alt="" />
                             </div>                  
@@ -44,33 +43,31 @@ const Main = () => {
                 <div className="container">
                     <div className="row ens-actu-manga">
                         <div className="col-md-4 box-manga">
-                            <img src="/img/51P4B3flhKL._SX327_BO1,204,203,200_.jpg" alt="" />
+                            <img src="/img/51P4B3flhKL._SX327_BO1,204,203,200_.jpg" alt="image de l'article" />
                             <div className="text-actu-manga">
                                 <h3>Lorem, ipsum.</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque similique voluptates tempore sunt cum in quis eveniet blanditiis vero. Rem.</p>
                             </div>
                         </div>
                         <div className="col-md-4 box-manga">
-                            <img src="/img/fma-perfect-13-kurokawa.jpg" alt="" />
+                            <img src="/img/fma-perfect-13-kurokawa.jpg" alt="image de l'article" />
                             <div className="text-actu-manga">
                                 <h3>Lorem, ipsum.</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptas veniam assumenda tenetur, explicabo dicta aliquam nisi expedita animi repudiandae.</p>
                             </div>
                         </div>
                         <div className="col-md-4 box-manga">
-                            <img src="/img/One-Piece-Edition-lancement.jpg" alt="" />
+                            <img src="/img/One-Piece-Edition-lancement.jpg" alt="Image de l'article" />
                             <div className="text-actu-manga">
                                 <h3>Lorem, ipsum.</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis libero iste rem. Odit quis vitae asperiores exercitationem, mollitia porro nam!</p>
                             </div>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-md-12 btn-actu-manga">
-                            <Link to="/actu-mangas">
-                                Voir plus d'actualités Manga
-                            </Link>
-                        </div>
+                    <div className="row justify-content-lg-end justify-content-center">
+                        <Link className="col-md-3 col-8 text-center" to="/actu-mangas">
+                            Voir plus d'actualités Manga
+                        </Link>                      
                     </div>
                 </div>
             </section>
@@ -81,33 +78,31 @@ const Main = () => {
                 <div className="container ">
                     <div className="row ens-actu-anime">
                         <div className="col-md-4 box-anime">
-                            <img src="/img/51P4B3flhKL._SX327_BO1,204,203,200_.jpg" alt="" />
+                            <img src="/img/51P4B3flhKL._SX327_BO1,204,203,200_.jpg" alt="image de l'article" />
                             <div className="text-actu-anime">
                                 <h3>Lorem, ipsum.</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque similique voluptates tempore sunt cum in quis eveniet blanditiis vero. Rem.</p>
                             </div>
                         </div>
                         <div className="col-md-4 box-anime">
-                            <img src="/img/fma-perfect-13-kurokawa.jpg" alt="" />
+                            <img src="/img/fma-perfect-13-kurokawa.jpg" alt="image de l'article" />
                             <div className="text-actu-anime">
                                 <h3>Lorem, ipsum.</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptas veniam assumenda tenetur, explicabo dicta aliquam nisi expedita animi repudiandae.</p>
                             </div>
                         </div>
                         <div className="col-md-4 box-anime">
-                            <img src="/img/One-Piece-Edition-lancement.jpg" alt="" />
+                            <img src="/img/One-Piece-Edition-lancement.jpg" alt="image de l'article" />
                             <div className="text-actu-anime">
                                 <h3>Lorem, ipsum.</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis libero iste rem. Odit quis vitae asperiores exercitationem, mollitia porro nam!</p>
                             </div>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-md-12 btn-actu-anime">
-                            <Link to="/actu-animes">
-                                Voir plus d'actualités Anime
-                            </Link>
-                        </div>
+                    <div className="row justify-content-md-end justify-content-center">
+                        <Link className="col-md-3 col-8 text-center" to="/actu-animes">
+                            Voir plus d'actualités Anime
+                        </Link>                      
                     </div>
                 </div>
             </section>

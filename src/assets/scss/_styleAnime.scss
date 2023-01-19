@@ -5,7 +5,7 @@
         text-align: center;
         padding-top: 50px;
         padding-bottom: 50px;
-        font-size: 50px;
+        font-size: 8vh;
         color: $turquoise;
         text-shadow: 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue, 0 0 1px $blue;
     }
@@ -22,12 +22,21 @@
         margin-bottom: 20px;
         background-color: #15a8b052;
         color: $blue;
-        text-align: center; 
+        text-align: center;
+
+        .listanime-title {
+            font-size : 6vh;
+            font-weight: bold;
+            font-family: "Montserrat";
+            text-transform: uppercase;
+        }
     }
 
     .img-article-size  {
-        width: 200px;
+        width: 250px;
         
     }
+
+
 
 }

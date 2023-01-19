@@ -1,0 +1,563 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #EDE7E0;
+}
+
+#header {
+  position: relative;
+  background-color: #EDE7E0;
+}
+
+nav {
+  background-color: #EDE7E0;
+  height: 60px;
+}
+nav .liste-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+nav .search-bar {
+  padding-left: 300px;
+  padding-right: 150px;
+}
+nav .link-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+nav .link-manga {
+  padding-right: 20px;
+  color: #004E64;
+  text-decoration: none;
+}
+nav .link-anime {
+  color: #004E64;
+  text-decoration: none;
+}
+nav .style-input {
+  border-radius: 15px;
+  border: 2px solid #D14630;
+}
+nav .btn-search {
+  color: #D14630;
+  font-size: 20px;
+  padding-left: 10px;
+}
+nav .li-inscription {
+  padding-left: 50px;
+}
+nav .btn-inscription {
+  color: #D14630;
+  font-weight: bold;
+  padding: 7px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #D14630;
+}
+nav .btn-inscription:hover {
+  transition: all 0.3s ease-in;
+  color: #004E64;
+  border: 1px solid #004E64;
+}
+nav .signup-user {
+  margin-right: 50px;
+}
+nav .signup-user i {
+  color: #D14630;
+  font-size: 25px;
+}
+nav .signup-user i:hover {
+  color: #004E64;
+  transition: all 0.3s ease-in;
+}
+
+#coup-de-coeur {
+  margin-bottom: 80px;
+  margin-top: 80px;
+  background-color: #EDE7E0;
+  display: flex;
+  flex-direction: row;
+}
+#coup-de-coeur h2 {
+  font-family: "Bungee";
+  padding-bottom: 70px;
+  font-size: 5vh;
+  color: #D14630;
+  text-shadow: 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378;
+}
+#coup-de-coeur h2 span {
+  color: #0E7378;
+}
+#coup-de-coeur .img-cdc {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 25px;
+  border: 2px solid #0E7378;
+}
+#coup-de-coeur .img-cdc img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-actu {
+  padding-top: 50px;
+  font-size: 6vh;
+  text-transform: uppercase;
+  padding-left: 5%;
+  margin-bottom: 0;
+  font-family: "Bungee";
+  color: #D14630;
+  text-shadow: 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378, 0 0 1px #0E7378;
+}
+
+#actualites-manga {
+  background-color: #0E7378;
+  width: 100%;
+  margin-bottom: 50px;
+}
+#actualites-manga .ens-actu-manga {
+  justify-content: space-evenly;
+  padding-top: 50px;
+  display: flex;
+}
+#actualites-manga .ens-actu-manga .box-manga {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 400px;
+  padding: 0;
+  margin-bottom: 25px;
+  border: 2px solid #ff553b79;
+  border-radius: 5px;
+  background-color: #ede7e077;
+}
+#actualites-manga .ens-actu-manga .box-manga img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+#actualites-manga .ens-actu-manga .box-manga .text-actu-manga {
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+#actualites-manga a {
+  background-color: #004E64;
+  color: #EDE7E0;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+#actualites-manga a:hover {
+  background-color: #EDE7E0;
+  border: 1px solid #004E64;
+  color: #004E64;
+}
+
+#actualites-anime {
+  background-color: #0E7378;
+  width: 100%;
+  margin-bottom: 50px;
+}
+#actualites-anime .ens-actu-anime {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+#actualites-anime .ens-actu-anime .box-anime {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 400px;
+  border: 2px solid #ff553b79;
+  border-radius: 5px;
+  padding: 0;
+  margin-bottom: 25px;
+  background-color: #ede7e077;
+}
+#actualites-anime .ens-actu-anime .box-anime img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+#actualites-anime .ens-actu-anime .box-anime .text-actu-anime {
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+#actualites-anime a {
+  background-color: #004E64;
+  color: #EDE7E0;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+#actualites-anime a:hover {
+  background-color: #EDE7E0;
+  border: 1px solid #004E64;
+  color: #004E64;
+}
+
+@media (max-width: 768px) {
+  #coup-de-coeur .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .title-actu {
+    font-size: 6vh;
+  }
+
+  #actualites-anime .ens-actu-anime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #actualites-anime .ens-actu-anime .box-anime {
+    width: 100%;
+  }
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+.title-home {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3vh;
+  font-weight: bold;
+  color: #0E7378;
+  text-shadow: 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630, 0 0 2px #D14630;
+  position: absolute;
+  z-index: 990;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 440px;
+}
+
+#footer {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color: #004E64;
+  text-decoration: none;
+}
+
+.mentions-footer {
+  list-style-type: none;
+}
+
+.style-list-footer {
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #004E64;
+  padding-left: 55px;
+  text-decoration: none;
+}
+
+.style-list-footer:hover {
+  color: #D14630;
+}
+
+.icon-reseaux {
+  color: #004E64;
+}
+
+.icon-reseaux:hover {
+  color: #D14630;
+}
+
+.logo-reseaux {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-right: 45px;
+  padding-top: 50px;
+  font-size: 20px;
+}
+.logo-reseaux .fa-brands {
+  padding-right: 20px;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 17px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #004E64;
+}
+.newsletter p {
+  padding-right: 10px;
+  margin-bottom: 0;
+}
+
+.ipt-newsletter {
+  border-radius: 15px;
+  border: 2px solid #004E64;
+}
+
+.ipt-newsletter:hover {
+  border: 2px solid #D14630;
+}
+
+.icon-newsletter {
+  margin-left: 20px;
+  color: #004E64;
+}
+
+.icon-newsletter:hover {
+  color: #D14630;
+}
+
+main {
+  font-family: "Monserrat";
+  font-weight: bold;
+  font-size: 17px;
+}
+main .contour-background {
+  border: 2px solid #D14630;
+  width: 700px;
+  height: 450px;
+  margin: auto;
+}
+main .title-connexion {
+  margin-top: 92px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "bungee";
+  text-align: center;
+  color: #004E64;
+  text-shadow: 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630;
+  padding-bottom: 50px;
+}
+main .pseudo-form {
+  padding-bottom: 30px;
+  color: #004E64;
+  font-weight: bold;
+  text-align: center;
+}
+main .email-form {
+  padding-bottom: 30px;
+  color: #004E64;
+  font-weight: bold;
+  text-align: center;
+}
+main .mail-lbl {
+  padding-right: 65px;
+}
+main .password-form {
+  padding-bottom: 30px;
+  color: #004E64;
+  font-weight: bold;
+  text-align: center;
+}
+main .password-lbl-co {
+  padding-right: 20px;
+}
+main .submit-form {
+  text-align: center;
+}
+main .ipt-form-co {
+  padding: 7px 15px;
+  border-radius: 15px;
+  color: #004E64;
+  border: 2px solid #004E64;
+  background-color: #EDE7E0;
+}
+main .ipt-form-co:hover {
+  color: #D14630;
+  border: 2px solid #D14630;
+}
+
+main {
+  font-family: "Monserrat";
+  font-weight: bold;
+  font-size: 17px;
+}
+main .contour-background {
+  border: 2px solid #D14630;
+  width: 700px;
+  height: 450px;
+  margin: auto;
+}
+main .title-inscription {
+  margin-top: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "bungee";
+  text-align: center;
+  color: #004E64;
+  text-shadow: 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630, 0 0 1px #D14630;
+  padding-bottom: 50px;
+}
+main .pseudo-form {
+  padding-bottom: 25px;
+  color: #004E64;
+  font-weight: bold;
+  text-align: center;
+}
+main .pseudo-lbl {
+  padding-right: 145px;
+}
+main .email-form {
+  padding-bottom: 30px;
+  color: #004E64;
+  font-weight: bold;
+  text-align: center;
+}
+main .email-lbl {
+  padding-right: 147px;
+}
+main .password-form {
+  padding-bottom: 30px;
+  color: #004E64;
+  font-weight: bold;
+  text-align: center;
+}
+main .password-lbl {
+  padding-right: 102px;
+}
+main .repassword-form {
+  padding-bottom: 30px;
+  color: #004E64;
+  font-weight: bold;
+  text-align: center;
+}
+main .repassword-lbl {
+  padding-right: 10px;
+}
+main .submit-form {
+  text-align: center;
+}
+main .ipt-form-ins {
+  padding: 7px 15px;
+  border-radius: 15px;
+  color: #004E64;
+  border: 2px solid #004E64;
+  background-color: #EDE7E0;
+}
+main .ipt-form-ins:hover {
+  color: #D14630;
+  border: 2px solid #D14630;
+}
+
+.page-mangas h1 {
+  font-family: "bungee";
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 50px;
+  color: #0E7378;
+  text-shadow: 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64;
+}
+.page-mangas .articles-page-mangas {
+  display: flex;
+  justify-content: center;
+}
+.page-mangas .article-manga {
+  width: 50%;
+  height: 250px;
+  border: 2px solid #D14630;
+  margin-bottom: 20px;
+  background-color: #15a8b052;
+  color: #004E64;
+}
+
+.page-animes h1 {
+  font-family: "bungee";
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 8vh;
+  color: #0E7378;
+  text-shadow: 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64, 0 0 1px #004E64;
+}
+.page-animes .articles-page-animes {
+  display: flex;
+  justify-content: center;
+}
+.page-animes .article-anime {
+  width: 50%;
+  height: 40%;
+  border: 2px solid #D14630;
+  margin-bottom: 20px;
+  background-color: #15a8b052;
+  color: #004E64;
+  text-align: center;
+}
+.page-animes .article-anime .listanime-title {
+  font-size: 6vh;
+  font-weight: bold;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+}
+.page-animes .img-article-size {
+  width: 250px;
+}
