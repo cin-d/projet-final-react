@@ -11,7 +11,7 @@ const EspaceUser = () => {
    
     useEffect(() => {
         const jwtLocalStorage = localStorage.getItem('jwt');
-        const jwtRole = JSON.parse(jwtLocalStorage).roles;
+        const jwtRole = JSON.parse(jwtLocalStorage).role;
         // Ici ce sont les variables pour stocker les valeurs du jwt et du rôle et pouvoir les utiliser 
         // dans la suite du code
     
