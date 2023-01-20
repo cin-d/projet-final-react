@@ -2,22 +2,29 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useState, useEffect } from "react";
 import DecoBtn from "../components/DecoBtn";
+import { useNavigate } from "react-router";
 
 
 
 const EspaceUser = () => {
 
-    const [role, setRole] = useState();
-   
+    const navigate = useNavigate();
+
+    const [role, setRole] = useState(null);
+
     useEffect(() => {
+
         const jwtLocalStorage = localStorage.getItem('jwt');
         const jwtRole = JSON.parse(jwtLocalStorage).role;
-        // Ici ce sont les variables pour stocker les valeurs du jwt et du rôle et pouvoir les utiliser 
-        // dans la suite du code
-    
+  
+            setRole(jwtRole);
 
-          setRole(jwtRole);
-})
+            if(jwtRole != 'user') {
+                navigate('/connexion')
+                alert('Vous devez être connecté')
+            }
+  }, []);
+
 
 return (
     <>
