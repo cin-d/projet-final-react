@@ -78,10 +78,27 @@
 }
 
 
-// @media(min-width:768px) {
+@media screen and (max-width: 768px)  {
 
-//     .mentions-footer {
-//         flex-direction: row;
-//         justify-content: center;
-//     }
-// }
+    #footer {
+        display: flex; 
+        flex-direction : column;
+        text-align: center;
+
+        .style-list-footer {
+            padding: 0;
+        }
+
+        .logo-reseaux {
+            display: flex; 
+            justify-content: center;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .newsletter  {
+            display: flex; 
+            flex-direction: column;
+        }
+    }
+}
